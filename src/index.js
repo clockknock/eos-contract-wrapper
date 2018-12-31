@@ -33,6 +33,9 @@ async function makeContractWithEosjs(contractName) {
 
         //concat params string
         let params = "";
+        if(action.fields===undefined){
+            return;
+        }
         for (let i = 0; i < action.fields.length; i++) {
             let field = action.fields[i];
             params += `${field.name}, `;
@@ -102,9 +105,11 @@ async function makeContractWithEosService(contractName) {
 
     let actionsBuffer = "";
     actions.forEach((action) => {
-
         //concat params string
         let params = "";
+        if(action.fields===undefined){
+            return;
+        }
         for (let i = 0; i < action.fields.length; i++) {
             let field = action.fields[i];
             params += `${field.name}, `;
