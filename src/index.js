@@ -91,7 +91,6 @@ class ${contractClassName} {
         this.permission = permission;
     }
     ${actionsBuffer}
-    
 }
 module.exports = ${contractClassName};`;
 }
@@ -138,7 +137,6 @@ class ${contractClassName} {
         this.permission = permission;
     }
     ${actionsBuffer}
-    
 }
 module.exports = ${contractClassName};`;
 }

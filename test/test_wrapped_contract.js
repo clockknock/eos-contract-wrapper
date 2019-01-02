@@ -12,5 +12,4 @@ describe('test contract', function () {
         console.info(JSON.stringify(receipt, null, 2), "\n ");
     });
 
-
 });
